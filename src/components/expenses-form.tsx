@@ -1,6 +1,8 @@
+import { addExpense } from "@/actions/actions";
+
 const ExpensesForm = () => {
   return (
-    <form className="w-full mt-8 rounded overflow-hidden">
+    <form action={addExpense} className="w-full mt-8 rounded overflow-hidden">
       <input
         type="text"
         name="description"
